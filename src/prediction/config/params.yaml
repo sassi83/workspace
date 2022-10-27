@@ -1,0 +1,16 @@
+prediction_cv:
+  ros__parameters:
+    num_timesteps: 60
+    timestep: 0.05
+
+
+prediction_nn:
+  ros__parameters:
+    model_path: "/home/afius/workspace/src/prediction/model/aura_model_gaus_non_para.pb"
+    gpu_id: 0
+    gpu_memory_fraction: 0.9
+
+
+publisher_dummy_data:
+  ros__parameters:
+    dummy_trajectory_path: "/home/afius/workspace/src/prediction/dummy/dummy_trajectory.txt"

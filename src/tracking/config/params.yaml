@@ -1,0 +1,7 @@
+tracking:
+  ros__parameters:
+    publish_tf: true
+    ref_frame: "map"
+    frame: "tracker"
+    portname: "/dev/ttyUSB0"
+    serial_timeout: 800
