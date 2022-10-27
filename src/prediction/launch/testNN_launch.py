@@ -17,18 +17,21 @@ def generate_launch_description():
             package='prediction',
             name='prediction_nn',
             executable='prediction_nn',
-            parameters=[config]
+            parameters=[config],
+            output='screen',
         ),
         Node(
             package='prediction',
             name='publisher_dummy_data',
             executable='publisher_dummy_data',
-            parameters=[config]
+            parameters=[config],
+            output='screen',
         ),
         Node(
             package='prediction',
             name='subsciber_predicted_list',
-            executable='subsciber_predicted_list'
+            executable='subsciber_predicted_list',
+            output='screen',
         )
     ])
     return ld

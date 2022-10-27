@@ -348,11 +348,9 @@ public:
     // update input
     void updateInputTensor(std::vector<std::vector<float> * > inputVec)
     {
-        std::cout << "Update input Tensor of size = "<<inputVec.size()<< std::endl;
         for(size_t i = 0; i < inputVec.size(); i++)
         {
             memcpy(TF_TensorData(inputTensor[i]), inputVec[i]->data(), inputLength[i]);
-            std::cout << "input Tensor "<< i << " of size = "<<inputVec[i]->size()<< std::endl;
         }
     }
 
